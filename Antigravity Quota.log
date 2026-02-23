@@ -1,0 +1,39 @@
+2026-02-23T00:43:40.676Z DEBUG [AGQ][Extension] ============================================================
+2026-02-23T00:43:40.677Z DEBUG [AGQ][Extension] Antigravity Quota Activating
+2026-02-23T00:43:40.677Z DEBUG [AGQ][Extension] ============================================================
+2026-02-23T00:43:40.678Z INFO  [AGQ][Extension] VS Code Version: 1.107.0
+2026-02-23T00:43:40.678Z INFO  [AGQ][Extension] Extension activating at: 2026-02-23T00:43:40.678Z
+2026-02-23T00:43:40.679Z DEBUG [AGQ][ProcessFinder] Initializing ProcessFinder for platform: linux, arch: x64
+2026-02-23T00:43:40.679Z INFO  [AGQ][ProcessFinder] Target process name: language_server_linux_x64
+2026-02-23T00:43:40.682Z DEBUG [AGQ][Extension] Initial config: {
+  "enabled": true,
+  "polling_interval": 120000,
+  "show_prompt_credits": false
+}
+2026-02-23T00:43:40.684Z DEBUG [AGQ][Extension] Starting async initialization...
+2026-02-23T00:43:40.685Z DEBUG [AGQ][Extension] ============================================================
+2026-02-23T00:43:40.685Z DEBUG [AGQ][Extension] Initializing Extension
+2026-02-23T00:43:40.685Z DEBUG [AGQ][Extension] ============================================================
+2026-02-23T00:43:40.686Z DEBUG [AGQ][PERF] Timer started: initialize_extension
+2026-02-23T00:43:40.686Z INFO  [AGQ][Extension] Detecting Antigravity process...
+2026-02-23T00:43:40.687Z DEBUG [AGQ][ProcessFinder] ============================================================
+2026-02-23T00:43:40.687Z DEBUG [AGQ][ProcessFinder] Starting process detection (max_retries: 1)
+2026-02-23T00:43:40.687Z DEBUG [AGQ][ProcessFinder] ============================================================
+2026-02-23T00:43:40.687Z DEBUG [AGQ][PERF] Timer started: detect_process_info
+2026-02-23T00:43:40.687Z DEBUG [AGQ][ProcessFinder] Attempt 1/1
+2026-02-23T00:43:40.688Z DEBUG [AGQ][ProcessFinder] Executing process list command:
+pgrep -af language_server_linux_x64
+2026-02-23T00:43:40.704Z INFO  [AGQ][Extension] Extension activation complete
+2026-02-23T00:43:41.346Z DEBUG [AGQ][ProcessFinder] Raw stdout (53 chars):
+12476 /bin/sh -c pgrep -af language_server_linux_x64
+
+2026-02-23T00:43:41.347Z WARN  [AGQ][ProcessFinder] Failed to parse process info from command output
+2026-02-23T00:43:41.348Z ERROR [AGQ][ProcessFinder] Process detection failed after 1 attempt(s)
+2026-02-23T00:43:41.348Z DEBUG [AGQ][PERF] Timer ended: detect_process_info (661ms)
+2026-02-23T00:43:41.348Z ERROR [AGQ][Extension] Antigravity process not found
+2026-02-23T00:43:41.349Z INFO  [AGQ][Extension] Troubleshooting tips:
+2026-02-23T00:43:41.349Z INFO  [AGQ][Extension]    1. Make sure Antigravity extension is installed and enabled
+2026-02-23T00:43:41.349Z INFO  [AGQ][Extension]    2. Check if the language_server process is running
+2026-02-23T00:43:41.349Z INFO  [AGQ][Extension]    3. Try reloading VS Code
+2026-02-23T00:43:41.349Z INFO  [AGQ][Extension]    4. Open "Output" panel and select "Antigravity Quota" for detailed logs
+2026-02-23T00:43:41.351Z DEBUG [AGQ][PERF] Timer ended: initialize_extension (665ms)
